@@ -91,3 +91,13 @@ def placeorder(request):
 
 
     return redirect("/")
+
+@login_required(login_url='loginpage')
+def maincheckout(request):
+
+    total_price=3
+
+    userprofile=Profile.objects.filter(user=request.user).first()
+
+    context={'total_price':total_price,'userprofile':userprofile}
+    return render(request,'store/maincheckout.html',context)
