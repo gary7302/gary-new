@@ -9,7 +9,7 @@ class CustomUserForm(UserCreationForm):
     password2 = forms.CharField(widget=forms.PasswordInput(attrs={'class': 'form-control', 'placeholder': 'Confirm Your Password'}))
     class Meta:
         model=User
-        fields=['username','email','password1','password2']
+        fields=['email','password1','password2']
 
 
 class CommentForm(forms.Form):
