@@ -46,7 +46,7 @@ class Order(models.Model):
     fname=models.CharField(max_length=100,null=False)
     lname = models.CharField(max_length=100, null=False)
     email = models.EmailField(max_length=100, null=False)
-    mobilenumber=models.IntegerField(max_length=100,null=False)
+    mobilenumber=models.IntegerField(null=False)
     address = models.TextField(null=False)
     city = models.CharField(max_length=100, null=False)
     state= models.CharField(max_length=100, null=False)
@@ -78,7 +78,7 @@ class Orderitems(models.Model):
 
 class Profile(models.Model):
     user=models.OneToOneField(User,on_delete=models.CASCADE)
-    mobilenumber = models.IntegerField(max_length=100, null=False)
+    mobilenumber = models.IntegerField(null=False)
     address = models.TextField(null=False)
     city = models.CharField(max_length=100, null=False)
     state = models.CharField(max_length=100, null=False)
