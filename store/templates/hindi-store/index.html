@@ -10,9 +10,11 @@
                         <img src="{{ data.image.url }}" class="w-100" />
 
                         <h5 class="card-title">{{data.name}}</h5>
-                        <a href="{% url 'type' data.slug %}" class="btn btn-primary">विवरण देखें</a>
+                        <a href="{% url 'hindicomment' data.id %}" class="btn btn-primary">रोगी मंच</a>
                     </div>
                 </div>
             </div>
         {% endfor %}
         {% endblock content %}
+    </div>
+</div>
