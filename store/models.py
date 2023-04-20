@@ -152,6 +152,7 @@ class SpanishCategory(models.Model):
     def __str__(self):
         return self.name
 
+<<<<<<< HEAD
 # class ChineseComment(models.Model):
 #     product=models.ForeignKey(ChineseCategory,on_delete=models.CASCADE,related_name="chinesecomments")
 #     commenter_name=models.ForeignKey(User,on_delete=models.CASCADE)
@@ -187,6 +188,13 @@ class SpanishComment(models.Model):
     commenter_name=models.ForeignKey(User,on_delete=models.CASCADE)
     comment_body=models.TextField()
     comment_image=models.ImageField(upload_to=get_file_path_spanish,null=True,blank=True)
+=======
+class Comment(models.Model):
+    product=models.ForeignKey(ChineseCategory,on_delete=models.CASCADE,related_name="comments")
+    commenter_name=models.ForeignKey(User,on_delete=models.CASCADE)
+    comment_body=models.TextField()
+    comment_image=models.ImageField(upload_to=get_file_path,null=True,blank=True)
+>>>>>>> dbd2428dbb022ddde7293e2f42e68deee4422436
     created_at=models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

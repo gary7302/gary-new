@@ -18,9 +18,12 @@ urlpatterns = [
     path('delete-cart-item',cartview.deletecartitem,name="deletecartitem"),
     path('checkout',checkview.checkout,name='checkout'),
     path('maincheckout',checkview.maincheckout,name='maincheckout'),
+<<<<<<< HEAD
     path('chinesemaincheckout',checkview.chinesemaincheckout,name='chinesemaincheckout'),
     path('hindimaincheckout',checkview.hindimaincheckout,name='hindimaincheckout'),
     path('spanishmaincheckout',checkview.spanishmaincheckout,name='spanishmaincheckout'),
+=======
+>>>>>>> dbd2428dbb022ddde7293e2f42e68deee4422436
     path('place-order',checkview.placeorder,name="placeorder"),
     path('charge', paymentview.charge, name='charge'),
     path('success/', paymentview.success, name='success'),
@@ -38,8 +41,11 @@ urlpatterns = [
     path('chinese-getpatch',chineseview.chinesegetpatch,name='chinese-getpatch'),
     path('usepatch',usepatch,name='usepatch'),
     path('chinese-usepatch',chineseview.chineseusepatch,name='chinese-usepatch'),
+<<<<<<< HEAD
     path('hindicomment/<int:id>',hindiview.hindicomment,name='hindicomment'),
     path('hindiaddComment/<int:id>',hindiview.hindiaddcomment,name='hindiaddComment'),
     path('spanishcomment/<int:id>',spanishview.spanishcomment,name='spanishcomment'),
     path('spanishaddcomment/<int:id>',spanishview.spanishaddcomment,name='spanishaddcomment'),
+=======
+>>>>>>> dbd2428dbb022ddde7293e2f42e68deee4422436
 ]

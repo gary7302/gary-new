@@ -100,6 +100,7 @@ def maincheckout(request):
     userprofile=Profile.objects.filter(user=request.user).first()
 
     context={'total_price':total_price,'userprofile':userprofile}
+<<<<<<< HEAD
     return render(request,'store/maincheckout.html',context)
 
 @login_required(login_url='loginpage')
@@ -131,3 +132,6 @@ def spanishmaincheckout(request):
 
     context={'total_price':total_price,'userprofile':userprofile}
     return render(request,'spanish-store/maincheckout.html',context)
+=======
+    return render(request,'store/maincheckout.html',context)
+>>>>>>> dbd2428dbb022ddde7293e2f42e68deee4422436
