@@ -101,6 +101,7 @@ def maincheckout(request):
 
     context={'total_price':total_price,'userprofile':userprofile}
 <<<<<<< HEAD
+<<<<<<< HEAD
     return render(request,'store/maincheckout.html',context)
 
 @login_required(login_url='loginpage')
@@ -135,3 +136,6 @@ def spanishmaincheckout(request):
 =======
     return render(request,'store/maincheckout.html',context)
 >>>>>>> dbd2428dbb022ddde7293e2f42e68deee4422436
+=======
+    return render(request,'store/maincheckout.html',context)
+>>>>>>> b7b970adc474a4a8d5423ee8c8468f728a2e39ec

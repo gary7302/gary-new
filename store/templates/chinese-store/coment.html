@@ -14,17 +14,23 @@
       <h4>See All comments</h4>
       <hr>
 <<<<<<< HEAD
+<<<<<<< HEAD
       {% if not eachProduct.chinacomments.all %}
         <p>No Comments Yet...Write the first comment</p>
       {% else %}
         {% for comment in eachProduct.chinacomments.all %}
       <img src="{{ comment.comment_image.url }}" height="80px" width="80px" />
 =======
+=======
+>>>>>>> b7b970adc474a4a8d5423ee8c8468f728a2e39ec
       {% if not eachProduct.comments.all %}
         <p>No Comments Yet...Write the first comment</p>
       {% else %}
         {% for comment in eachProduct.comments.all %}
+<<<<<<< HEAD
 >>>>>>> dbd2428dbb022ddde7293e2f42e68deee4422436
+=======
+>>>>>>> b7b970adc474a4a8d5423ee8c8468f728a2e39ec
           <h5>{{ comment.commenter_name }}</h5>
           <h6>{{ comment.comment_body }}</h6>
       <p>{{ comment.created_at }}</p>
